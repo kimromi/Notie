@@ -1,0 +1,22 @@
+<div id='panel_menu'>
+
+  <p class="menu-brand">Notie</p>
+  <ul class="menu-list">
+    <li id="menu-notes" title="esc" data-toggle="tooltip"><a href="#list"><i class="fa fa-list"></i><span class="smart-hidden"> NOTES</span></a></li>
+    <li id="menu-add" title="Alt+n" data-toggle="tooltip"><a href="#add"><i class="fa fa-plus"></i><span class="smart-hidden"> NEW</span></a></li>
+  </ul>
+
+  <div class="menu-right dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      <span id="menu_user_name" class="smart-hidden"></span> <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+      <li><a href='/logout'><i class="fa fa-sign-out"></i> LOGOUT</a></li>
+    </ul>
+  </div>
+
+  <div id="user_config" class="hidden">
+    <input type="hidden" id="config-taglist" value="">
+    <input type="hidden" id="config-keyshortcut" value="<%= key_shortcut %>">
+  </div>
+</div>

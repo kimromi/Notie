@@ -1,0 +1,15 @@
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap
+//= require bootstrap-switch
+//= require underscore
+//= require backbone
+//= require jquery-ui/autocomplete
+//= require tag-it.min
+//= require split-pane
+//= require tabIndent
+//= require marked.min
+//= require highlight.pack
+//= require function
+//= require smart
+//= require app

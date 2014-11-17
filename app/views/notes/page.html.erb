@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notie</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <%= stylesheet_link_tag 'application', media: 'all'%>
+  <link media="only screen and (min-width: 0px) and (max-width: 768px)" href="/assets/smart.css" type="text/css" rel="stylesheet" />
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="app">
+    <div id="menu"></div>
+    <div id="view">
+      <p class="text-center">
+        <i class="fa fa-spinner fa-spin" style="font-size: 30px;"></i>
+      </p>
+    </div>
+</div>
+
+<div id="message_box"></div>
+
+<input type="hidden" id="user-name" value="<%= @user_name %>">
+</body>
+<%= javascript_include_tag 'application'%>
+<script type="text/javascript">
+
+  $.ajax({
+    url: "/notes",
+    success: function(res) {
+      window.router = new Notie.Routers.AppRouter({notes: res.notes, user: res.user});
+      Backbone.history.start();
+    }
+  });
+
+</script>
+</html>

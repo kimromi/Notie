@@ -1,0 +1,19 @@
+<td class="edit-note col-xs-11 col-sm-11 col-md-11">
+  <input type="text" class="label_title" value="<%= title %>" readonly/>
+</td>
+<td class="note-menu text-center text-center col-xs-1 col-sm-1 col-md-1">
+  <div class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      <i class="fa fa-reorder" style="color: #DDD"></i></b>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+      <li><a class="show-note"><i title="right" class="fa fa-chevron-down" data-toggle="tooltip"></i> <span>SHOW</span></a></li>
+      <li><a class="download"><i class="fa fa-download"></i> TEXT DOWNLAD</a></li>
+      <li><a class="destroy"><i title="del" class="fa fa-trash-o" data-toggle="tooltip"></i> DELETE</a></li>
+      <form class="download-form" action="/app/download" method="POST">
+        <input type="hidden" name="data[title]" value="<%= title %>"/>
+        <input type="hidden" name="data[content]" value="<%= content %>"/>
+      </form>
+    </ul>
+  </div>
+</td>

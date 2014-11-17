@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notie</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <%= stylesheet_link_tag 'top', media: 'all'%>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container text-center">
+
+  <div id="logo_box">
+    <p class="brand">Notie</p>
+    Simple and Convenient web text editor.
+  </div>
+  <div id="login_box">
+    <a href="/login/qiita" class="btn btn-default btn-lg">
+      <span class="fa-stack"><i class="fa fa-square fa-stack-1x"></i><i class="fa fa-search fa-stack-1x fa-inverse fa-1x"></i></span>
+      Sign in with Qiita
+    </a>
+    <a href="/login/github" class="btn btn-default btn-lg">
+      <i class="fa fa-github"></i>
+      Sign in with GitHub
+    </a>
+  </div>
+
+</div>
+
+
+</body>
+<%= javascript_include_tag 'top'%>
+</html>

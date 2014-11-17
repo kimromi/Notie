@@ -1,0 +1,63 @@
+/*= require font-awesome */
+@import "compass";
+@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+#logo_box {
+  margin-top: 50px;
+  color: #FFF;
+
+  .brand {
+    font-family:'Raleway','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+  }
+}
+
+#login_box {
+  margin-top: 30px;
+
+  a.btn {
+    width: 200px;
+    margin-bottom: 10px;
+    border-color: #B66;
+    background-color: #F99;
+    color: #333;
+
+    .fa-inverse {
+      color: #F99;
+    }
+
+    &:hover {
+      @include transition(0.2s);
+      border-color: #B66;
+      background-color: #F66;
+      color: #FFF;
+
+      .fa-inverse {
+        @include transition(0.2s);
+        color: #F66;
+      }
+    }
+  }
+
+  .fa-stack {
+    width: 12px;
+    height: 15px;
+    vertical-align: top;
+    line-height: 18px;
+  }
+
+  .btn-lg {
+    font-size: 14px;
+  }
+}

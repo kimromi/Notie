@@ -1,0 +1,12 @@
+<div id='panel_edit'>
+  <div class='split-pane fixed-left'>
+    <div class='split-pane-component' id='input_div'>
+      <input type='text' id='title' placeholder='title' value="<%= title %>">
+      <input type='text' id='tag' placeholder='TAG' value="<%= tag_list %>">
+      <textarea id='input' placeholder='input'><%= content %></textarea>
+      <button id="update" class="btn btn-success btn-sm" title="Ctrl+s" data-toggle="tooltip">UPDATE</button>
+    </div>
+    <div class='split-pane-divider'></div>
+    <div class='split-pane-component preview' id='preview'></div>
+  </div>
+</div>

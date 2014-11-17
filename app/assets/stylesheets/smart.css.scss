@@ -1,0 +1,20 @@
+span.smart-show { display: inline; }
+span.smart-hidden { display: none; }
+
+#panel_menu {
+
+  p.menu-brand {
+    width: 50px;
+    font-size: 14px;
+  }
+  ul.menu-list {
+    li {
+      width: 40px;
+    }
+  }
+
+  .menu-right {
+    width: 40px;
+    margin-right: 0px;
+  }
+}

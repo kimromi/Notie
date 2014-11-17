@@ -1,0 +1,103 @@
+#panel_list {
+  padding: 5px;
+
+  #search-note {
+    font-family:'Hiragino Kaku Gothic ProN', Meiryo, sans-serif, FontAwesome;
+    margin-bottom: 5px;
+  }
+  table.table {
+    font-size: 14px;
+
+    .tr_note {
+      border-bottom: 1px solid #EEE;
+      @include hover(#EEE, none);
+
+      td {
+        border: none;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+      }
+      &:hover {
+        input {
+          background-color: #EEE;
+          @include trans(0.3s);
+          cursor: pointer;
+        }
+      }
+
+      .note-menu {
+        a {
+          display: block
+        }
+      }
+    }
+    .selected {
+      background-color: #F66;
+      input {
+        background-color: #F66;
+        color: #FFF;
+      }
+    }
+
+    .preview {
+      td {border: none;}
+      padding:5px;
+      border-bottom: 1px solid #EEE;
+    }
+
+  }
+
+  #search-box {
+    padding: 10px;
+
+    h3 {
+      margin: 0 0 10px 0;
+      padding: 5px;
+      border-bottom: 1px solid #EEE;
+    }
+
+    #tag-list {
+
+      .tag {
+        display: inline-block;
+        position: relative;
+        margin: 0 0 10px 15px;
+        padding: 0px 10px;
+        background-color: #EEE;
+        line-height: 1.6em;
+        font-size: 14px;
+
+        &:after {
+          width: 0;
+          height: 0;
+          content: '';
+          position: absolute;
+          right: 100%;
+          border: solid;
+          border-color: transparent;
+          border-right-color: #EEE;
+          border-width: 0.8em;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .selected {
+        background-color: #F66;
+        color: #FFF;
+        cursor: pointer;
+
+        &:after, &:hover {
+          border-right-color: #F66;
+        }
+
+      }
+    }
+  }
+
+}
