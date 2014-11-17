@@ -44,14 +44,27 @@
     }
   }
 
-  #edit_menu {
+  .split-pane-divider {
       left: 50%;
-      width: 1px;
-      background-color: #EEE;
+      width: 8px;
+      background-color: #666;
+      text-align: center;
+      position: relative;
+
+      >div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 25px;
+        color: #333;
+      }
   }
   #preview {
       left: 50%;
-      margin-left: 1px;
+      margin-left: 8px;
       padding: 10px;
   }
 }
